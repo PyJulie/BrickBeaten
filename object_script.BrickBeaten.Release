@@ -1,0 +1,14 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\rect.o
+./release\ball.o
+./release\brick.o
+./release\slider.o
+./release\control.o
+./release\page.o
+./release\qrc_image.o
+./release\qrc_sucai.o
+./release\moc_mainwindow.o
+./release\moc_page.o
+);

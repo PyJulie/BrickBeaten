@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>sucai/ball.png</file>
+        <file>sucai/beijing.png</file>
+        <file>sucai/brick.png</file>
+        <file>sucai/slider.png</file>
+        <file>sucai/start.jpg</file>
+        <file>sucai/end.png</file>
+        <file>sucai/menu.png</file>
+        <file>sucai/continue.png</file>
+        <file>sucai/next.png</file>
+        <file>sucai/success.png</file>
+        <file>sucai/rank.jpg</file>
+        <file>sucai/rank.png</file>
+        <file>sucai/2.gif</file>
+    </qresource>
+</RCC>
