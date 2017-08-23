@@ -3,14 +3,14 @@
 ### 1.control类
   负责所有逻辑部分的管理，包括最基本的界面变换（游戏开始、游戏结束、下一关卡等）、所有控件的初始化（初始位置、状态等）、小球的移动处理、小球与墙的碰撞、小球与砖块的碰撞、小球与托盘的碰撞的一些处理。
   小球移动在控制类中的处理方法：</br>
-  <div align="center">
+  <div align=center>
 ![image](https://github.com/PyJulie/ImageUsed/blob/master/BrickBeaten/1.jpg)
   </div>
   </br>垂直方向的移动距离=速度*sin(angle);
   水平方向的移动距离=速度*cos(angle);
   再结合小球移动前的位置,即可判断小球移动后的位置，再利用paintEvent()进行重绘。
   小球在碰撞中的处理方法：</br>
-  <div align="center>
+  <div align=center>
 ![image](https://github.com/PyJulie/ImageUsed/blob/master/BrickBeaten/2.jpg)
   </div>
    </br>由于在Qt中，所有的控件都有自己的一个绝对位置，这个位置是相比于界面左上角为起点而言的。假设小球的位置为(x,y)，半径为r，再加上利用angle来确定小球是移动的方向，若向右移，只需判断(x+r,y)与(x,y-r)与砖块下方和左方坐标的大小即可，反之亦然。总的来说，就是根据小球的坐标来判断接下来是否会发生碰撞，而获取角度则可减少次碰撞计算。
